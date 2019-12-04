@@ -38,14 +38,14 @@ def nyc_pigeon_organizer(data)
         puts "\n\n"
         if pigeon_hash[name]
           if pigeon_hash[name][k]
-            pigeon_hash[name][k] << att
+            pigeon_hash[name][k] << att.to_s
           else
-            pigeon_hash[name][k] = [att]
+            pigeon_hash[name][k] = [att.to_s]
           end
           
         else
           pigeon_hash[name] = {}
-          pigeon_hash[name][k] = [att]
+          pigeon_hash[name][k] = [att.to_s]
           
         end
       end
