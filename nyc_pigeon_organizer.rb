@@ -40,26 +40,16 @@ def nyc_pigeon_organizer(data)
           if pigeon_hash[name][k]
             pigeon_hash[name][k] << att
           else
-            
+            pigeon_hash[name][k] = [att]
+          end
           
         else
-          
-        end
-        
-        if pigeon_hash[name] && pigeon_hash[name][k]
-          
-         
-          
-        else
-          
-          
           pigeon_hash[name] = {}
           pigeon_hash[name][k] = [att]
+          
         end
       end
-      
     end
-      
   end
   
   pigeon_hash
